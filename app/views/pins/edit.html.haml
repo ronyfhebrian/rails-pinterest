@@ -1,5 +1,9 @@
 .col-md-6.col-md-offset-3
-  %h1 Edit Pin
-  = link_to image_tag @pin.image.url(:medium)
-  = render 'form'
-  = link_to "Cancel", pin_path
+  .row
+    .panel.panel-default
+      .panel-heading
+        %h1 Edit Pin
+      .panel-body
+        = link_to image_tag @pin.image.url(:medium), style: "display: block; margin: 0 auto;"
+        = render 'form'
+        = link_to "Cancel", pin_path
